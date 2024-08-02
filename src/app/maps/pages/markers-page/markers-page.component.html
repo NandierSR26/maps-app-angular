@@ -6,6 +6,7 @@
     [ngStyle]="{ backgroundColor:colorMarker.color}"
     class="list-group-item"
     (dblclick)="deleteMarker(i)"
+    (click)="flyTo( colorMarker.marker )"
   >
     Marker {{ i+1 }}
   </li>
